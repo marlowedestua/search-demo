@@ -13,9 +13,7 @@ public class HomeController {
     @CrossOrigin(origins = {"*"})
     public Map<String, String> index() {
         Map<String, String> versionDetails = new HashMap<>();
-        versionDetails.put("application", "Search Demo");
-        versionDetails.put("version", "2.0.0");
+        versionDetails.put("app-version", "2.0.0");
         return versionDetails;
     }
-
 }
