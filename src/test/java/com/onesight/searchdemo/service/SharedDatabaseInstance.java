@@ -9,7 +9,7 @@ import org.testcontainers.junit.jupiter.Container;
 public abstract class SharedDatabaseInstance {
     @Container
     public static PostgreSQLContainer postgreSQLContainer = new PostgreSQLContainer("postgres:11.2")
-            .withDatabaseName("integration-tests-db")
+            .withDatabaseName("search_demo")
             .withUsername("sa")
             .withPassword("sa");
     static class Initializer
